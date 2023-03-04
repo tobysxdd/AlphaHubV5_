@@ -1,0 +1,106 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Alpha Hub V4", "Ocean")
+
+-- Home
+local Home = Window:NewTab("Home")
+local HomeSelection = Home:NewSection("                   Welcome To Alpha Hub V5!!!")
+
+-- Misc
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Misc Scripts")
+
+MiscSection:NewButton("Infinite Yield", "this script makes you quite an admin bruv", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+MiscSection:NewButton("Dex Explorer", "you can see dev things", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+end)
+
+MiscSection:NewButton("Infinite jump", "you can break your spacebar", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
+end)
+
+MiscSection:NewButton("Chat Spoofer", "lets you chat for other people", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"))()
+end)
+
+MiscSection:NewSlider("Walk Speed", "gotta go fast!", 200, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MiscSection:NewSlider("Jump Power", "gotta go high!", 200, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+
+-- Aimbot
+local Aimbot = Window:NewTab("Aimbot")
+local AimbotSelection = Aimbot:NewSection("Aimbot Scripts")
+
+AimbotSelection:NewButton("Owl Hub", "nah, he just have good gaming chair", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+end)
+
+AimbotSelection:NewButton("Dark Hub", "nah, he just have good gaming chair v2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+
+-- Games
+local Games = Window:NewTab("Games")
+local GameSelection = Games:NewSection("Scripts For Games")
+
+GameSelection:NewButton("Vehicle Simulator", "vehicle simulator script, speed, autofarm etc.", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HFkLb2Pw"))()
+end)
+
+GameSelection:NewButton("RoCitizens", "this script will give u infinite money", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/RoCitizens%20Infinite%20Money.txt"))()
+end)
+
+GameSelection:NewButton("Phantom Forces", "hitbox extender", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Demonfall%20Trainer.txt"))()
+end)
+
+GameSelection:NewButton("Apoc2", "map radar", function()
+    loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Apoc2%20Map%20Radar.txt"))()
+end)
+
+GameSelection:NewButton("Natural Disaster Survival", "script for naural disaster survival", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringUjHI6RQpz2o8", true))()
+end)
+
+GameSelection:NewButton("Prison Life", "script for prison life", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PUuVVKPA", true))()
+end)
+
+GameSelection:NewButton("Shark Bite", "script for shark bite", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YYVLbzVg", true))()
+end)
+
+GameSelection:NewButton("Jailbreak", "script for jailbreak", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak'),true))()
+end)
+
+GameSelection:NewButton("Murder Mystery 2", "script for mm2", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+end)
+
+GameSelection:NewButton("Blox Burg", "script for blox burg", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/jCunLjFE'),true))()
+end)
+
+GameSelection:NewButton("Meep City +", "enables plus", function()
+    game.ReplicatedStorage.PlayerData[game.Players.LocalPlayer.UserId].PLUS.Value = true
+end)
+
+-- Credits
+local Credits = Window:NewTab("Credits")
+local CreditSelection = Credits:NewSection("Credits")
+
+CreditSelection:NewLabel("Made By - Hustej Saul#1606")
+CreditSelection:NewLabel("Server Moderator - golias.merlin#9645")
+CreditSelection:NewLabel("Server Moderator - ZornIsBlatant#9842")
+CreditSelection:NewLabel("https://discord.gg/yup2asYpyv")
